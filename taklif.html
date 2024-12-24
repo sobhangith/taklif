@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه مغلوب عدد</title>
+</head>
+<body>
+
+    <h1>محاسبه مغلوب عدد</h1>
+
+    <input type="number" id="t1" placeholder="عدد را وارد کنید">
+    <button onclick="sumab()">محاسبه مغلوب</button>
+
+    <div id="result"></div>
+
+    <script>
+        function sumab() {
+           
+            let number = document.getElementById("t1").value;
+            
+            let reversedNumber = number.split('').reverse().join('');
+         
+            document.getElementById("result").innerText = "مغلوب عدد: " + reversedNumber;
+        }
+    </script>
+
+</body>
+</html>
